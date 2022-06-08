@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "629ed761a0ea64dc4ed439d1"
+  },
+  "position": "desarrollador cloud",
+  "__v": 0,
+  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+},{
+  "_id": {
+    "$oid": "629fdbb64cecba7e5515aaa2"
+  },
+  "position": "arquitecto",
+  "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629fdbd64cecba7e5515aab0"
+  },
+  "position": "líder recursos humanos",
+  "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a01ff5665e4426625b02df"
+  },
+  "position": "auxiliar financiero",
+  "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0217a665e4426625b0348"
+  },
+  "position": "analista cloud",
+  "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a02183665e4426625b034f"
+  },
+  "position": "gerente",
+  "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0218e665e4426625b0356"
+  },
+  "position": "coordinador",
+  "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a021c3665e4426625b0368"
+  },
+  "position": "desarrollador web",
+  "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a021d1665e4426625b036f"
+  },
+  "position": "analista de datos",
+  "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a021df665e4426625b0376"
+  },
+  "position": "auxiliar logístico",
+  "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a021f4665e4426625b0387"
+  },
+  "position": "auxiliar de información",
+  "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from",
+  "__v": 0
+}]

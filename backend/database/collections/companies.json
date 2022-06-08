@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "629ed3e13854c4a387bf537a"
+  },
+  "name": "kimberly clark",
+  "address": "cl 90",
+  "email": "kcc@colombia.com",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629ed40815d342e4bb19808f"
+  },
+  "name": "Colsubsidio",
+  "address": "Cl 26",
+  "email": "colsubsidio@colombia.com.co",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "629ed808a0ea64dc4ed439dc"
+  },
+  "name": "IFX Networks",
+  "address": "Cl 90",
+  "email": "ifx@colombia.com.co",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a01d7fc6941a73389055b0"
+  },
+  "name": "samsung",
+  "address": "cl 80 90",
+  "email": "samsung@colombia.co",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0202d665e4426625b02f8"
+  },
+  "name": "ecopetrol",
+  "address": "cr 123",
+  "email": "ecopetro@colombia.co",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0208c665e4426625b0305"
+  },
+  "name": "google",
+  "address": "cr 90 12",
+  "email": "google@colombia.co",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0209d665e4426625b030a"
+  },
+  "name": "meta",
+  "address": "cl 125 123",
+  "email": "meta@colombia.com",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a020cf665e4426625b0313"
+  },
+  "name": "microsoft",
+  "address": "cl 123 123",
+  "email": "microsofr@colombia.com",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a020ff665e4426625b0318"
+  },
+  "name": "bavaria",
+  "address": "cr 123 929",
+  "email": "bavaria@colombia.com",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a02150665e4426625b033b"
+  },
+  "name": "codensa",
+  "address": "cr 43 12",
+  "email": "codensa@colombia.com",
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+}]

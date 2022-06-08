@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "62a004a3208acf88dfd89ff7"
+  },
+  "name": "alejandra",
+  "lastname": "tavera roa",
+  "email": "alejandratavera@gmail.com",
+  "pid": {
+    "$oid": "629fdbd64cecba7e5515aab0"
+  },
+  "cid": {
+    "$oid": "629ed3e13854c4a387bf537a"
+  },
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a004c3208acf88dfd8a002"
+  },
+  "name": "giancarlo",
+  "lastname": "bernal",
+  "email": "gian@gmail.com",
+  "pid": {
+    "$oid": "629fdbb64cecba7e5515aaa2"
+  },
+  "cid": {
+    "$oid": "629ed40815d342e4bb19808f"
+  },
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a00e22c6941a7338905522"
+  },
+  "name": "camilo",
+  "lastname": "hamon serna",
+  "email": "camilohamonserna@gmail.com",
+  "pid": {
+    "$oid": "629ed761a0ea64dc4ed439d1"
+  },
+  "cid": {
+    "$oid": "629ed808a0ea64dc4ed439dc"
+  },
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a01eb7ea99343e8f066ed5"
+  },
+  "name": "miguel",
+  "lastname": "gonzalez",
+  "email": "miguelgonzalez@gmail.com",
+  "pid": {
+    "$oid": "62a01ff5665e4426625b02df"
+  },
+  "cid": {
+    "$oid": "62a01d7fc6941a73389055b0"
+  },
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a02268665e4426625b039b"
+  },
+  "name": "sebastian",
+  "lastname": "ayala",
+  "email": "sebastianayala@gmail.com",
+  "pid": {
+    "$oid": "62a021f4665e4426625b0387"
+  },
+  "cid": {
+    "$oid": "62a02150665e4426625b033b"
+  },
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0234f665e4426625b03cd"
+  },
+  "name": "gabriel",
+  "lastname": "gonzalez",
+  "email": "gabriel@gmail.com",
+  "pid": {
+    "$oid": "62a021d1665e4426625b036f"
+  },
+  "cid": {
+    "$oid": "629ed808a0ea64dc4ed439dc"
+  },
+  "createdat": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "__v": 0
+}]

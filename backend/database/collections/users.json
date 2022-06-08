@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "629e911a5fc2872875498f7a"
+  },
+  "email": "admin@ifx.com",
+  "password": "$2a$10$tlaNb74g/p4.ViMVSL0vm.Frp2P.R9.4NwkiIgpkHOewuWQPIrz.y",
+  "rid": {
+    "$oid": "629e8f887ddb45b54727558c"
+  },
+  "__v": 0,
+  "lastname": "ifx",
+  "name": "admin"
+}]
