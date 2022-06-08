@@ -12,7 +12,7 @@ It has administration modules that allow you to create, edit, delete and list co
 ├───routes
 └───utils
 ```
-## Directory frontend
+### Directory frontend
 ```bash
 ├───app
 │   ├───classes
@@ -54,6 +54,7 @@ It has administration modules that allow you to create, edit, delete and list co
 * Have installed node version v14 or higher
 * Have installed npm version 6.14 or higher
 * Have Angular CLI version 12 or higher installed.
+* Have MongoDB installed
 ## Run
 * To install the packages required for the application deployment, the ``npm i`` command is used. This should be done in the backend and frontend folder.
 * Cargar las colecciones de la base de datos en MongoDB. Las colecciones se encuentran en la carpeta ``backend/collections``
