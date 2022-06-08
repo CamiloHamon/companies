@@ -49,7 +49,12 @@ It has administration modules that allow you to create, edit, delete and list co
 │   └───img
 └───environments
 ```
-## Execution
+# Execution
+## Prerequisites
+* Have installed node version v14 or higher
+* Have installed npm version 6.14 or higher
+* Have Angular CLI version 12 or higher installed.
+## Run
 * To install the packages required for the application deployment, the ``npm i`` command is used. This should be done in the backend and frontend folder.
 * Cargar las colecciones de la base de datos en MongoDB. Las colecciones se encuentran en la carpeta ``backend/collections``
 * Run backend: use the ``npm run dev`` command to run the service
