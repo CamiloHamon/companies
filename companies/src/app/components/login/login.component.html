@@ -1,0 +1,55 @@
+<div class="container-fluid bg-login h-100">
+  <div
+    class="col-lg-11 row vh-70 justify-content-center justify-content-lg-end align-content-center"
+  >
+    <div class="col-9 col-sm-7 col-md-5 col-lg-4 col-xl-3 mt-5">
+      <h5 class="text-login text-center mt-5">Iniciar sesión</h5>
+      <form [formGroup]="form" (ngSubmit)="signIn($event)">
+        <div class="mt-4 mb-3">
+          <label for="email" class="form-label d-none">Usuario</label>
+          <input
+            type="text"
+            formControlName="email"
+            class="form-control"
+            placeholder="Usuario"
+            id="email"
+            autocomplete="off"
+          />
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{ getError("email") }}</small>
+          </p>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label d-none">Password</label>
+          <input
+            type="password"
+            formControlName="password"
+            class="form-control"
+            placeholder="Contraseña"
+          />
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{
+              getError("password")
+            }}</small>
+          </p>
+        </div>
+        <div
+          *ngIf="error"
+          class="alert alert-danger bg-primary text-danger text-center p-2"
+          role="alert"
+        >
+          Usuario o contraseña inválidos
+        </div>
+        <div class="text-center mt-4">
+          <button
+            type="submit"
+            [disabled]="form.invalid"
+            class="btn btn-primary"
+          >
+            ENTRAR
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

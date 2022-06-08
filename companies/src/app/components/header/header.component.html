@@ -1,0 +1,162 @@
+<div class="container-fluid sticky-top d-lg-block h-custom bg-dark h-10vh">
+  <div class="row align-content-center h-100 shadow">
+    <a routerLink="/" class="col-2 text-center d-lg-none">
+      <img class="logoHeader" src="/assets/img/logoHeader.png" />
+    </a>
+    <div class="hamburguer d-lg-none text-end">
+      <button
+        type="button"
+        class="btn p-0 color-items-movil"
+        (click)="openMenu()"
+        *ngIf="!show"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="row bg-movil px-lg-0 mx-lg-0 h-100 align-content-start align-content-lg-center"
+      [class.bg-movil-active]="show"
+    >
+      <button
+        type="button"
+        class="btn-close btn-close-movil d-lg-none"
+        (click)="closeMenu()"
+      >
+        <span class="material-icons-outlined white color-items-movil">
+          close
+        </span>
+      </button>
+      <div class="col-12 col-lg-6 pt-movil ps-5 px-lg-0 bg-primary-header">
+        <div
+          class="row mx-0 align-items-lg-center justify-content-lg-end h-lg-100"
+        >
+          <div
+            class="col-2 px-lg-0 text-lg-center d-none d-lg-block img-header-logo"
+          >
+            <a routerLink="/">
+              <img class="logoHeader dk" src="/assets/img/logoHeader.png" />
+            </a>
+          </div>
+          <div class="col-12 col-lg-3 col-xxl-auto">
+            <a
+              class="nav-link d-flex justify-content-center"
+              routerLink="/empresas"
+              routerLinkActive="currentLink"
+              (click)="closeMenu()"
+            >
+              <div class="d-flex bd-highlight3 align-items-lg-center">
+                <div class="bd-highlight">
+                  <span class="material-icons-outlined pt-1">business</span>
+                </div>
+                <div class="bd-highlight ms-1">Empresas</div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-12 col-lg-3 col-xxl-auto"
+            *ngIf="adminService.isAdmin() || adminService.isSuperAdmin()"
+          >
+            <a
+              class="nav-link d-flex justify-content-center"
+              routerLink="/empleados"
+              routerLinkActive="currentLink"
+              (click)="closeMenu()"
+            >
+              <div class="d-flex bd-highlight3 align-items-lg-center">
+                <div class="bd-highlight">
+                  <span class="material-icons-outlined pt-1">people</span>
+                </div>
+                <div class="bd-highlight ms-1">Empleados</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 h-inherit bg-primary-header">
+        <div class="row mx-0 align-items-lg-center h-lg-100">
+          <div
+            *ngIf="adminService.isAdmin() || adminService.isSuperAdmin()"
+            class="col-12 col-lg-3 col-xxl-auto"
+          >
+            <a
+              class="nav-link text-lg-center d-flex justify-content-center"
+              routerLink="/cargos"
+              routerLinkActive="currentLink"
+              (click)="closeMenu()"
+            >
+              <div class="d-flex bd-highlight3 align-items-lg-center">
+                <div class="bd-highlight">
+                  <span class="material-icons-outlined pt-1">work</span>
+                </div>
+                <div class="bd-highlight ms-1">Cargos</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-auto">
+            <ng-container *ngIf="authService.loggedIn(); else login">
+              <div class="row mt-3 mt-lg-0">
+                <div class="col">
+                  <div ngbDropdown class="d-flex justify-content-center">
+                    <button
+                      class="d-flex bd-highlight3 align-items-center btn btn-outline-primary text-name"
+                      id="dropdownBasic1"
+                      ngbDropdownToggle
+                    >
+                      <span class="material-icons-outlined">person</span>
+
+                      <div class="bd-highlight ms-1">
+                        <span class="text-capitalize">
+                          {{ adminService.getNameUser() }}
+                        </span>
+                      </div>
+                    </button>
+                    <div
+                      ngbDropdownMenu
+                      aria-labelledby="dropdownBasic1"
+                      class="p-0"
+                    >
+                      <a
+                        class="py-2" style="cursor: pointer;"
+                        ngbDropdownItem
+                        (click)="authService.logout()"
+                      >
+                        Cerrar sesión
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+            <ng-template #login>
+              <a
+                class="nav-link text-lg-center d-flex justify-content-center"
+                routerLink="/login"
+                routerLinkActive="currentLink"
+                (click)="closeMenu()"
+              >
+                <div class="d-flex bd-highlight3 align-items-lg-center">
+                  <div class="bd-highlight">
+                    <span class="material-icons-outlined pt-1">person</span>
+                  </div>
+                  <div class="bd-highlight ms-1">Login</div>
+                </div>
+              </a>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

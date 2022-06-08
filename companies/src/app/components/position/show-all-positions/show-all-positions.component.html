@@ -1,0 +1,63 @@
+<div class="row mx-0 justify-content-center pt-4">
+  <a routerLink="/cargos/crear" class="btn btn-primary col-auto btn-create"
+    >Crear cargo</a
+  >
+  <h5 class="text-center">Cargos registrados</h5>
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div
+        *ngIf="error"
+        class="alert alert-danger bg-primary text-danger text-center p-2"
+        role="alert"
+      >
+        {{ message }}
+      </div>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table
+      datatable
+      [dtOptions]="dtOptions"
+      [dtTrigger]="dtTrigger"
+      class="table mt-5"
+    >
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let position of positions; let n = index">
+          <td>{{ n + 1 }}</td>
+          <td>
+            <span class="text-capitalize">{{ position.position }}</span>
+          </td>
+          <td>
+            <div class="row justify-content-around">
+              <a
+                [routerLink]="['/cargos/', position._id]"
+                class="col-3 btn p-0"
+                style="width: auto"
+              >
+                <span class="material-icons-outlined pt-1 text-primary"
+                  >edit</span
+                >
+              </a>
+              <button
+                class="col-3 btn p-0"
+                style="width: auto"
+                (click)="delete(position._id)"
+              >
+                <span class="material-icons-outlined pt-1 text-danger"
+                  >remove_circle</span
+                >
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

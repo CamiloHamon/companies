@@ -1,0 +1,7 @@
+.bg-position {
+  background-image: url("/assets/img/us.png");
+  background-repeat: no-repeat;
+  background-size: calc(100vw - 60vw);
+  background-position-y: center;
+  background-position-x: 10%;
+}

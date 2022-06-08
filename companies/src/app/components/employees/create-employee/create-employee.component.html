@@ -1,0 +1,117 @@
+<div class="container-fluid h-100 h-movil bg-position">
+  <div
+    class="col-lg-11 row vh-70 justify-content-center justify-content-lg-end align-content-center"
+  >
+    <div class="col-9 col-sm-7 col-md-5 col-lg-5 mt-5">
+      <h5 class="text-center mt-5">Crear nuevo empleado</h5>
+      <form [formGroup]="form" (ngSubmit)="create($event)">
+        <div class="mt-4 mb-3">
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control text-capitalize"
+            placeholder="Nombre"
+            id="name"
+            autocomplete="off"
+          />
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{ getError("name") }}</small>
+          </p>
+        </div>
+        <div class="mt-4 mb-3">
+          <input
+            type="text"
+            formControlName="lastname"
+            class="form-control text-capitalize"
+            placeholder="Apellido"
+            id="lastname"
+            autocomplete="off"
+          />
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{
+              getError("lastname")
+            }}</small>
+          </p>
+        </div>
+        <div class="mt-4 mb-3">
+          <label for="email" class="form-label d-none">Usuario</label>
+          <input
+            type="text"
+            formControlName="email"
+            class="form-control"
+            placeholder="Correo"
+            id="email"
+            autocomplete="off"
+          />
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{ getError("email") }}</small>
+          </p>
+        </div>
+        <div class="mt-4 mb-3">
+          <label for="validationCustom04" class="form-label">Cargo</label>
+          <select
+            class="form-select text-capitalize"
+            id="validationCustom04"
+            formControlName="position"
+            required
+          >
+            <option
+              *ngFor="let position of positions"
+              [value]="position._id"
+              [disabled]="position.disabled"
+              [selected]="position.selected"
+              class="text-capitalize text-dark"
+            >
+              {{ position.position }}
+            </option>
+          </select>
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{
+              getError("position")
+            }}</small>
+          </p>
+        </div>
+        <div class="mt-4 mb-3">
+          <label for="validationCustom04" class="form-label">Empresa</label>
+          <select
+            class="form-select text-capitalize"
+            id="validationCustom04"
+            formControlName="company"
+            required
+          >
+            <option
+              *ngFor="let company of companies"
+              [value]="company._id"
+              [disabled]="company.disabled"
+              [selected]="company.selected"
+              class="text-capitalize text-dark"
+            >
+              {{ company.name }}
+            </option>
+          </select>
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">
+              {{ getError("company") }}
+            </small>
+          </p>
+        </div>
+        <div
+          *ngIf="error"
+          class="alert alert-danger bg-primary text-danger text-center p-2"
+          role="alert"
+        >
+          {{ message }}
+        </div>
+        <div class="text-center mt-4">
+          <button
+            type="submit"
+            [disabled]="form.invalid"
+            class="btn btn-primary"
+          >
+            CREAR
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

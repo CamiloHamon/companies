@@ -1,0 +1,56 @@
+<div class="container-fluid bg-position h-100 h-movil">
+  <div
+    class="col-lg-11 row vh-70 justify-content-center justify-content-lg-end align-content-center"
+  >
+    <div class="col-9 col-sm-7 col-md-5 col-lg-5 mt-5">
+      <h5 class="text-login text-center mt-5">Detalles del cargo</h5>
+      <form [formGroup]="form" (ngSubmit)="update($event)">
+        <div class="mt-4 mb-3">
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control text-capitalize"
+            placeholder="Cargo"
+            id="name"
+            autocomplete="off"
+            value="{{ position.position }}"
+          />
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{ getError("name") }}</small>
+          </p>
+        </div>
+        <div class="mb-3">
+          <textarea
+            type="description"
+            formControlName="description"
+            class="form-control"
+            placeholder="Descripción"
+            value="{{ position.description }}"
+            rows="5"
+          ></textarea>
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{
+              getError("description")
+            }}</small>
+          </p>
+        </div>
+        <div
+          *ngIf="error"
+          class="alert alert-danger bg-primary text-danger text-center p-2"
+          role="alert"
+        >
+          {{ message }}
+        </div>
+        <div class="text-center mt-4">
+          <button
+            type="submit"
+            [disabled]="form.invalid"
+            class="btn btn-primary"
+          >
+            ACTUALIZAR
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

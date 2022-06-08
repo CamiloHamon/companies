@@ -1,0 +1,54 @@
+<div class="container-fluid h-100 h-movil bg-position">
+  <div
+    class="col-lg-11 row vh-70 justify-content-center justify-content-lg-end align-content-center"
+  >
+    <div class="col-9 col-sm-7 col-md-5 col-lg-5 mt-5">
+      <h5 class="text-center mt-5">Crear nuevo cargo</h5>
+      <form [formGroup]="form" (ngSubmit)="create($event)">
+        <div class="mt-4 mb-3">
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control text-capitalize"
+            placeholder="Cargo"
+            id="name"
+            autocomplete="off"
+          />
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{ getError("name") }}</small>
+          </p>
+        </div>
+        <div class="mb-3">
+          <textarea
+            type="description"
+            formControlName="description"
+            class="form-control"
+            placeholder="Descripción"
+            rows="5"
+          ></textarea>
+          <p class="mt-1 ps-2">
+            <small class="form-text text-danger">{{
+              getError("description")
+            }}</small>
+          </p>
+        </div>
+        <div
+          *ngIf="error"
+          class="alert alert-danger bg-primary text-danger text-center p-2"
+          role="alert"
+        >
+          {{ message }}
+        </div>
+        <div class="text-center mt-4">
+          <button
+            type="submit"
+            [disabled]="form.invalid"
+            class="btn btn-primary"
+          >
+            CREAR
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

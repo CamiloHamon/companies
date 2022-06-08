@@ -1,0 +1,212 @@
+@import "~material-icons/iconfont/material-icons.css";
+
+@font-face {
+	font-family: Pistilli;
+	src: local('Pistilli'), url('/assets/fonts/Pistilli-Roman.otf');
+	font-weight: bold;
+}
+
+.bg-main {
+  background-image: url("/assets/img/puntos.png"),
+    url("/assets/img/figure-blue.png"), url("/assets/img/figure-blue-small.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: calc(100vh - 70vh), 40%, 80px 20px;
+  background-position-y: bottom, bottom, top;
+  background-position-x: left, right, left;
+}
+
+h5 {
+  color: #fff1cb;
+  font-size: calc(100vh - 96vh);
+  line-height: 70px;
+  font-weight: bold;
+  font-family: "Pistilli";
+  z-index: 10;
+}
+
+body {
+  height: calc(100vh - 103.6px);
+}
+
+th,
+tr {
+  text-align: center !important;
+  color: #fff1cb;
+}
+
+.btn-create {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.bg-primary {
+  background-color: #101320 !important;
+}
+
+.img-login {
+  max-width: 96.2%;
+}
+
+.page-item.disabled .page-link,
+.page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #101320;
+  border-color: #dee2e6;
+  cursor: pointer;
+}
+
+.text-login {
+  font-size: 2rem;
+  color: #fff1cb;
+  font-family: "Pistilli";
+}
+
+.form-control::placeholder {
+  color: #fff1cb;
+}
+
+.form-control {
+  background-color: #101320;
+  color: #fff1cb;
+  border: none;
+  border-bottom: 1px solid #6caaff;
+  border-radius: 0;
+}
+
+.form-control-error {
+  border-bottom: 1px solid #dc3545;
+}
+
+.form-control-success {
+  border-bottom: 1px solid #6caaff;
+}
+
+.form-control:focus {
+  color: #fff1cb;
+  background-color: initial;
+  border-color: #6caaff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: #fff1cb;
+  border-color: #fff1cb;
+}
+
+.form-check-input:focus {
+  border-color: initial;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-check-input:checked[type="checkbox"] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  /* background-color: black; */
+  /* filter: invert(100%); */
+}
+
+.form-check-label {
+  color: #fff1cb7d;
+  font-size: 13px;
+}
+
+.btn-primary {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  background-color: #6caaff;
+}
+
+.forgot {
+  font-size: 14px;
+  color: #fff1cb;
+  font-weight: 500;
+}
+
+.vh-70 {
+  height: 70vh !important;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+  color: #fff1cb;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+  color: #fff1cb;
+}
+
+span.text-capitalize,
+.form-label,
+small {
+  color: #fff1cb;
+}
+
+.form-label {
+  padding-left: 0.8rem;
+}
+
+.form-select {
+  background: transparent;
+  border: none !important;
+  border-bottom: 1px solid #6caaff !important;
+  color: #fff1cb;
+}
+
+.form-select:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  color: #fff1cb;
+}
+
+input[type="text"] {
+  text-transform: lowercase;
+}
+
+input[type="text"]::placeholder {
+  text-transform: capitalize;
+}
+
+option {
+  color: #101320;
+}
+
+.bg-position {
+  background-image: url("/assets/img/us.png");
+  background-repeat: no-repeat;
+  background-size: calc(100vw - 60vw);
+  background-position-y: center;
+  background-position-x: 10%;
+}
+
+@media only screen and (max-width: 991px) {
+  .btn-create {
+    position: relative;
+    right: initial;
+  }
+
+  .bg-main {
+    background-image: url("/assets/img/puntos.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vh - 70vh);
+    background-position-y: bottom;
+    background-position-x: left;
+  }
+
+  .h-movil {
+    height: auto !important;
+    padding-bottom: 1rem;
+    min-height: calc(100vh - 61px)!important;
+  }
+
+  .bg-position {
+    background-image: none!important;
+  }
+
+}
