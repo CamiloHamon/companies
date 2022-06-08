@@ -59,3 +59,6 @@ It has administration modules that allow you to create, edit, delete and list co
 * Cargar las colecciones de la base de datos en MongoDB. Las colecciones se encuentran en la carpeta ``backend/collections``
 * Run backend: use the ``npm run dev`` command to run the service
 * Run frontend: use the ``ng serve`` command to run the service
+## Users
+* Administrator: admin@ifx.com
+* Password: ifx123*
